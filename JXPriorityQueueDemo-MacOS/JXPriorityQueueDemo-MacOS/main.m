@@ -1,13 +1,13 @@
 //
 //  main.m
-//  JXPriorityQueueDemo
+//  JXPriorityQueueDemo-MacOS
 //
-//  Created by JiongXing on 2016/11/4.
+//  Created by JiongXing on 2016/11/7.
 //  Copyright © 2016年 JiongXing. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "JXPriorityQueue/JXPriorityQueue.h"
+#import "JXPriorityQueue.h"
 
 void testQueue() {
     JXPriorityQueue *queue = [JXPriorityQueue queueWithComparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
@@ -36,10 +36,16 @@ void testQueue() {
     [queue deQueue];[queue logDataWithMessage:@"deQueue"];
     [queue deQueue];[queue logDataWithMessage:@"deQueue"];
     [queue deQueue];[queue logDataWithMessage:@"deQueue"];
+    [queue deQueue];[queue logDataWithMessage:@"deQueue"];
+    [queue deQueue];[queue logDataWithMessage:@"deQueue"];
+    [queue deQueue];[queue logDataWithMessage:@"deQueue"];
+    [queue deQueue];[queue logDataWithMessage:@"deQueue"];
+    [queue deQueue];[queue logDataWithMessage:@"deQueue"];
+    [queue deQueue];[queue logDataWithMessage:@"deQueue"];
 }
 
 void testSort() {
-    NSArray *data = @[@55, @11, @99, @33, @77, @44, @88, @66, @22];
+    NSArray *data = @[@50, @10, @90, @30, @70, @40, @80, @60, @20];
     JXPriorityQueue *queue = [JXPriorityQueue queueWithData:data comparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
         NSInteger num1 = obj1.integerValue;
         NSInteger num2 = obj2.integerValue;
@@ -63,5 +69,3 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
-
-

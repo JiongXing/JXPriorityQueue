@@ -61,8 +61,10 @@
     [self swapIndexA:1 indexB:self.data.count - 1];
     [self.data removeLastObject];
     
-    // 下沉刚刚交换上来的队尾元素，维持堆有序状态
-    [self sinkIndex:1 bottomIndex:self.data.count - 1];
+    if (self.data.count > 1) {
+        // 下沉刚刚交换上来的队尾元素，维持堆有序状态
+        [self sinkIndex:1 bottomIndex:self.data.count - 1];
+    }
     return element;
 }
 

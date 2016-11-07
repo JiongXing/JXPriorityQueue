@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "944B20641DCC7A8E0066EA3A"
-               BuildableName = "JXPriorityQueueDemo"
-               BlueprintName = "JXPriorityQueueDemo"
-               ReferencedContainer = "container:JXPriorityQueueDemo.xcodeproj">
+               BlueprintIdentifier = "9487BEA31DD0A50A001AD8F3"
+               BuildableName = "JXPriorityQueueDemo-MacOS"
+               BlueprintName = "JXPriorityQueueDemo-MacOS"
+               ReferencedContainer = "container:JXPriorityQueueDemo-MacOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "944B20641DCC7A8E0066EA3A"
-            BuildableName = "JXPriorityQueueDemo"
-            BlueprintName = "JXPriorityQueueDemo"
-            ReferencedContainer = "container:JXPriorityQueueDemo.xcodeproj">
+            BlueprintIdentifier = "9487BEA31DD0A50A001AD8F3"
+            BuildableName = "JXPriorityQueueDemo-MacOS"
+            BlueprintName = "JXPriorityQueueDemo-MacOS"
+            ReferencedContainer = "container:JXPriorityQueueDemo-MacOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "944B20641DCC7A8E0066EA3A"
-            BuildableName = "JXPriorityQueueDemo"
-            BlueprintName = "JXPriorityQueueDemo"
-            ReferencedContainer = "container:JXPriorityQueueDemo.xcodeproj">
+            BlueprintIdentifier = "9487BEA31DD0A50A001AD8F3"
+            BuildableName = "JXPriorityQueueDemo-MacOS"
+            BlueprintName = "JXPriorityQueueDemo-MacOS"
+            ReferencedContainer = "container:JXPriorityQueueDemo-MacOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "944B20641DCC7A8E0066EA3A"
-            BuildableName = "JXPriorityQueueDemo"
-            BlueprintName = "JXPriorityQueueDemo"
-            ReferencedContainer = "container:JXPriorityQueueDemo.xcodeproj">
+            BlueprintIdentifier = "9487BEA31DD0A50A001AD8F3"
+            BuildableName = "JXPriorityQueueDemo-MacOS"
+            BlueprintName = "JXPriorityQueueDemo-MacOS"
+            ReferencedContainer = "container:JXPriorityQueueDemo-MacOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

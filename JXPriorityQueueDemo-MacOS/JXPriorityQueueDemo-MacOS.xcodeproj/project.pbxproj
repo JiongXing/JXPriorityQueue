@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		944B20691DCC7A8E0066EA3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 944B20681DCC7A8E0066EA3A /* main.m */; };
-		944B20751DCC7AF90066EA3A /* JXPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 944B20741DCC7AF90066EA3A /* JXPriorityQueue.m */; };
+		9487BEA81DD0A50A001AD8F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487BEA71DD0A50A001AD8F3 /* main.m */; };
+		9487BEB51DD0A626001AD8F3 /* JXPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9487BEB41DD0A626001AD8F3 /* JXPriorityQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		944B20631DCC7A8E0066EA3A /* CopyFiles */ = {
+		9487BEA21DD0A50A001AD8F3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		944B20651DCC7A8E0066EA3A /* JXPriorityQueueDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JXPriorityQueueDemo; sourceTree = BUILT_PRODUCTS_DIR; };
-		944B20681DCC7A8E0066EA3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		944B20731DCC7AF90066EA3A /* JXPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPriorityQueue.h; sourceTree = "<group>"; };
-		944B20741DCC7AF90066EA3A /* JXPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPriorityQueue.m; sourceTree = "<group>"; };
+		9487BEA41DD0A50A001AD8F3 /* JXPriorityQueueDemo-MacOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "JXPriorityQueueDemo-MacOS"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9487BEA71DD0A50A001AD8F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9487BEB31DD0A626001AD8F3 /* JXPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPriorityQueue.h; sourceTree = "<group>"; };
+		9487BEB41DD0A626001AD8F3 /* JXPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPriorityQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		944B20621DCC7A8E0066EA3A /* Frameworks */ = {
+		9487BEA11DD0A50A001AD8F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,106 +41,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		944B205C1DCC7A8E0066EA3A = {
+		9487BE9B1DD0A50A001AD8F3 = {
 			isa = PBXGroup;
 			children = (
-				944B20671DCC7A8E0066EA3A /* JXPriorityQueueDemo */,
-				944B20661DCC7A8E0066EA3A /* Products */,
+				9487BEA61DD0A50A001AD8F3 /* JXPriorityQueueDemo-MacOS */,
+				9487BEA51DD0A50A001AD8F3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		944B20661DCC7A8E0066EA3A /* Products */ = {
+		9487BEA51DD0A50A001AD8F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				944B20651DCC7A8E0066EA3A /* JXPriorityQueueDemo */,
+				9487BEA41DD0A50A001AD8F3 /* JXPriorityQueueDemo-MacOS */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		944B20671DCC7A8E0066EA3A /* JXPriorityQueueDemo */ = {
+		9487BEA61DD0A50A001AD8F3 /* JXPriorityQueueDemo-MacOS */ = {
 			isa = PBXGroup;
 			children = (
-				944B20681DCC7A8E0066EA3A /* main.m */,
-				944B206F1DCC7AA00066EA3A /* JXPriorityQueue */,
+				9487BEA71DD0A50A001AD8F3 /* main.m */,
+				9487BEB21DD0A626001AD8F3 /* JXPriorityQueue */,
 			);
-			path = JXPriorityQueueDemo;
+			path = "JXPriorityQueueDemo-MacOS";
 			sourceTree = "<group>";
 		};
-		944B206F1DCC7AA00066EA3A /* JXPriorityQueue */ = {
+		9487BEB21DD0A626001AD8F3 /* JXPriorityQueue */ = {
 			isa = PBXGroup;
 			children = (
-				944B20731DCC7AF90066EA3A /* JXPriorityQueue.h */,
-				944B20741DCC7AF90066EA3A /* JXPriorityQueue.m */,
+				9487BEB31DD0A626001AD8F3 /* JXPriorityQueue.h */,
+				9487BEB41DD0A626001AD8F3 /* JXPriorityQueue.m */,
 			);
-			path = JXPriorityQueue;
+			name = JXPriorityQueue;
+			path = ../../JXPriorityQueue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		944B20641DCC7A8E0066EA3A /* JXPriorityQueueDemo */ = {
+		9487BEA31DD0A50A001AD8F3 /* JXPriorityQueueDemo-MacOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 944B206C1DCC7A8E0066EA3A /* Build configuration list for PBXNativeTarget "JXPriorityQueueDemo" */;
+			buildConfigurationList = 9487BEAB1DD0A50A001AD8F3 /* Build configuration list for PBXNativeTarget "JXPriorityQueueDemo-MacOS" */;
 			buildPhases = (
-				944B20611DCC7A8E0066EA3A /* Sources */,
-				944B20621DCC7A8E0066EA3A /* Frameworks */,
-				944B20631DCC7A8E0066EA3A /* CopyFiles */,
+				9487BEA01DD0A50A001AD8F3 /* Sources */,
+				9487BEA11DD0A50A001AD8F3 /* Frameworks */,
+				9487BEA21DD0A50A001AD8F3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = JXPriorityQueueDemo;
-			productName = JXPriorityQueueDemo;
-			productReference = 944B20651DCC7A8E0066EA3A /* JXPriorityQueueDemo */;
+			name = "JXPriorityQueueDemo-MacOS";
+			productName = "JXPriorityQueueDemo-MacOS";
+			productReference = 9487BEA41DD0A50A001AD8F3 /* JXPriorityQueueDemo-MacOS */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		944B205D1DCC7A8E0066EA3A /* Project object */ = {
+		9487BE9C1DD0A50A001AD8F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = JiongXing;
 				TargetAttributes = {
-					944B20641DCC7A8E0066EA3A = {
+					9487BEA31DD0A50A001AD8F3 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 944B20601DCC7A8E0066EA3A /* Build configuration list for PBXProject "JXPriorityQueueDemo" */;
+			buildConfigurationList = 9487BE9F1DD0A50A001AD8F3 /* Build configuration list for PBXProject "JXPriorityQueueDemo-MacOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 944B205C1DCC7A8E0066EA3A;
-			productRefGroup = 944B20661DCC7A8E0066EA3A /* Products */;
+			mainGroup = 9487BE9B1DD0A50A001AD8F3;
+			productRefGroup = 9487BEA51DD0A50A001AD8F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				944B20641DCC7A8E0066EA3A /* JXPriorityQueueDemo */,
+				9487BEA31DD0A50A001AD8F3 /* JXPriorityQueueDemo-MacOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		944B20611DCC7A8E0066EA3A /* Sources */ = {
+		9487BEA01DD0A50A001AD8F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944B20691DCC7A8E0066EA3A /* main.m in Sources */,
-				944B20751DCC7AF90066EA3A /* JXPriorityQueue.m in Sources */,
+				9487BEA81DD0A50A001AD8F3 /* main.m in Sources */,
+				9487BEB51DD0A626001AD8F3 /* JXPriorityQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		944B206A1DCC7A8E0066EA3A /* Debug */ = {
+		9487BEA91DD0A50A001AD8F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		944B206B1DCC7A8E0066EA3A /* Release */ = {
+		9487BEAA1DD0A50A001AD8F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,14 +228,14 @@
 			};
 			name = Release;
 		};
-		944B206D1DCC7A8E0066EA3A /* Debug */ = {
+		9487BEAC1DD0A50A001AD8F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		944B206E1DCC7A8E0066EA3A /* Release */ = {
+		9487BEAD1DD0A50A001AD8F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -244,25 +245,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		944B20601DCC7A8E0066EA3A /* Build configuration list for PBXProject "JXPriorityQueueDemo" */ = {
+		9487BE9F1DD0A50A001AD8F3 /* Build configuration list for PBXProject "JXPriorityQueueDemo-MacOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				944B206A1DCC7A8E0066EA3A /* Debug */,
-				944B206B1DCC7A8E0066EA3A /* Release */,
+				9487BEA91DD0A50A001AD8F3 /* Debug */,
+				9487BEAA1DD0A50A001AD8F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		944B206C1DCC7A8E0066EA3A /* Build configuration list for PBXNativeTarget "JXPriorityQueueDemo" */ = {
+		9487BEAB1DD0A50A001AD8F3 /* Build configuration list for PBXNativeTarget "JXPriorityQueueDemo-MacOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				944B206D1DCC7A8E0066EA3A /* Debug */,
-				944B206E1DCC7A8E0066EA3A /* Release */,
+				9487BEAC1DD0A50A001AD8F3 /* Debug */,
+				9487BEAD1DD0A50A001AD8F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 944B205D1DCC7A8E0066EA3A /* Project object */;
+	rootObject = 9487BE9C1DD0A50A001AD8F3 /* Project object */;
 }

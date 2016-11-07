@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JXPriorityQueueDemo.xcscheme</key>
+		<key>JXPriorityQueueDemo-MacOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>944B20641DCC7A8E0066EA3A</key>
+		<key>9487BEA31DD0A50A001AD8F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
