@@ -260,6 +260,7 @@
 				944B206E1DCC7A8E0066EA3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

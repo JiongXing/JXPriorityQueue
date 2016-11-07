@@ -13,11 +13,16 @@ typedef NSComparisonResult(^JXPriorityQueueComparator)(id obj1, id obj2);
 /// 二叉堆实现的优先队列，大顶堆。
 @interface JXPriorityQueue : NSObject
 
-/// 新实例
-+ (instancetype)queueWithComparator:(JXPriorityQueueComparator)comparator;
-
 /// 定义元素的比较逻辑
 @property (nonatomic, copy) JXPriorityQueueComparator comparator;
+/// 统计队列长度
+@property (nonatomic, assign, readonly) NSInteger count;
+
+/// 创建实例
++ (instancetype)queueWithComparator:(JXPriorityQueueComparator)comparator;
+
+/// 创建实例
++ (instancetype)queueWithData:(NSArray *)data comparator:(JXPriorityQueueComparator)comparator;
 
 /// 入列
 - (void)enQueue:(id)element;
@@ -25,12 +30,15 @@ typedef NSComparisonResult(^JXPriorityQueueComparator)(id obj1, id obj2);
 /// 出列
 - (id)deQueue;
 
-/// 统计队列长度
-- (NSInteger)count;
-
-
-#pragma mark - Debug
-/// 打印队列
+/// Debug:打印队列
 - (void)logDataWithMessage:(NSString *)message;
+
+@end
+
+
+@interface JXPriorityQueue (Sort)
+
+/// 堆排序，结果为升序。
+- (void)sort;
 
 @end
