@@ -65,6 +65,9 @@
         // 下沉刚刚交换上来的队尾元素，维持堆有序状态
         [self sinkIndex:1 bottomIndex:self.data.count - 1];
     }
+    if (self.didDeQueueCallBack) {
+        self.didDeQueueCallBack(self.data.count - 1);
+    }
     return element;
 }
 
@@ -73,6 +76,10 @@
     id temp = self.data[indexA];
     self.data[indexA] = self.data[indexB];
     self.data[indexB] = temp;
+    
+    if (self.didSwapCallBack) {
+        self.didSwapCallBack(indexA - 1, indexB - 1);
+    }
 }
 
 /// 某个元素是否小于另一个元素
@@ -91,6 +98,9 @@
         if ([self isElement:self.data[parentIndex] lessThan:temp]) {
             // 把parent拉下来
             self.data[index] = self.data[parentIndex];
+            if (self.didSwapCallBack) {
+                self.didSwapCallBack(index - 1, parentIndex - 1);
+            }
             // 标记本元素需要上游的目标位置，为parent原位置
             index = parentIndex;
         }
@@ -122,6 +132,9 @@
         // 否则
         // 把最大子结点元素上游到本元素位置
         self.data[index] = self.data[maxChildIndex];
+        if (self.didSwapCallBack) {
+            self.didSwapCallBack(index - 1, maxChildIndex - 1);
+        }
         // 标记本元素需要下沉的目标位置，为最大子结点原位置
         index = maxChildIndex;
     }
@@ -164,6 +177,9 @@
     for (NSInteger index = self.data.count - 1; index > 1; index --) {
         // 每次把根结点放在列尾，下一次循环时将会剪掉
         [self swapIndexA:1 indexB:index];
+        if (self.didCutCallBack) {
+            self.didCutCallBack(index - 1);
+        }
         // 下沉根结点，重新调整为大顶堆
         [self sinkIndex:1 bottomIndex:index - 1];
     }
