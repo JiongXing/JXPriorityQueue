@@ -80,33 +80,28 @@
     id temp = self.data[indexA];
     self.data[indexA] = self.data[indexB];
     self.data[indexB] = temp;
+    
+    if (self.didSwapCallBack) {
+        self.didSwapCallBack(indexA - 1, indexB - 1);
+    }
 }
 
 /// 上游，传入需要上游的元素位置，以及允许上游的最顶位置
 - (void)swimIndex:(NSInteger)index {
-    // 暂存需要上游的元素
-    id temp = self.data[index];
-    
     // parent的位置为本元素位置的1/2
     for (NSInteger parentIndex = index / 2; parentIndex >= 1; parentIndex /= 2) {
         // 上游条件是本元素大于parent，否则不上游
-        if (self.comparator(temp, self.data[parentIndex]) != NSOrderedDescending) {
+        if (self.comparator(self.data[index], self.data[parentIndex]) != NSOrderedDescending) {
             break;
         }
-        // 把parent拉下来
-        self.data[index] = self.data[parentIndex];
         // 上游本元素
+        [self swapIndexA:index indexB:parentIndex];
         index = parentIndex;
     }
-    // 本元素进入目标位置
-    self.data[index] = temp;
 }
 
 /// 下沉，传入需要下沉的元素位置，以及允许下沉的最底位置
 - (void)sinkIndex:(NSInteger)index {
-    // 暂存需要下沉的元素
-    id temp = self.data[index];
-    
     // maxChildIndex指向最大的子结点，默认指向左子结点，左子结点的位置为本结点位置*2
     for (NSInteger maxChildIndex = index * 2; maxChildIndex <= self.tailIndex; maxChildIndex *= 2) {
         // 如果存在右子结点，并且左子结点比右子结点小
@@ -115,17 +110,13 @@
             ++ maxChildIndex;
         }
         // 下沉条件是本元素小于child，否则不下沉
-        if (self.comparator(temp, self.data[maxChildIndex]) != NSOrderedAscending) {
+        if (self.comparator(self.data[index], self.data[maxChildIndex]) != NSOrderedAscending) {
             break;
         }
-        // 否则
-        // 把最大子结点元素上游到本元素位置
-        self.data[index] = self.data[maxChildIndex];
-        // 标记本元素需要下沉的目标位置，为最大子结点原位置
+        // 下沉本元素
+        [self swapIndexA:index indexB:maxChildIndex];
         index = maxChildIndex;
     }
-    // 本元素进入目标位置
-    self.data[index] = temp;
 }
 
 - (NSArray *)fetchData {

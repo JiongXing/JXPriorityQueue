@@ -19,6 +19,9 @@ typedef NSComparisonResult(^JXPriorityQueueComparator)(id obj1, id obj2);
 /// 统计队列长度
 @property (nonatomic, assign, readonly) NSInteger count;
 
+/// 发生结点交换时回调
+@property (nonatomic, copy) void (^didSwapCallBack)(NSInteger indexA, NSInteger indexB);
+
 /// 创建实例
 + (instancetype)queueWithComparator:(JXPriorityQueueComparator)comparator;
 

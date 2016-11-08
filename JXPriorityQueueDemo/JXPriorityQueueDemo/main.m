@@ -1,8 +1,8 @@
 //
 //  main.m
-//  JXPriorityQueueDemo-MacOS
+//  JXPriorityQueueDemo
 //
-//  Created by JiongXing on 2016/11/7.
+//  Created by JiongXing on 2016/11/8.
 //  Copyright © 2016年 JiongXing. All rights reserved.
 //
 
@@ -32,7 +32,6 @@ void testQueue() {
     [queue enQueue:@20];[queue logDataWithMessage:@"enQueue"];
     
     NSLog(@"---------------- 出列 -----------------");
-    [queue deQueue];[queue logDataWithMessage:@"deQueue"];
     [queue deQueue];[queue logDataWithMessage:@"deQueue"];
     [queue deQueue];[queue logDataWithMessage:@"deQueue"];
     [queue deQueue];[queue logDataWithMessage:@"deQueue"];
