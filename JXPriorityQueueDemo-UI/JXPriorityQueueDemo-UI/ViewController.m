@@ -33,7 +33,7 @@ static const CGFloat kNodeSize = 34;
     self.nodeArray = [NSMutableArray array];
     self.lineArray = [NSMutableArray array];
     
-    self.data = @[@50, @10, @90, @30, @70, @20, @80, @40, @100, @60];
+    self.data = @[@40, @10, @60, @30, @70, @20, @50, @80, @90, @100];
     self.sema = dispatch_semaphore_create(0);
     
     self.queue = [JXPriorityQueue queueWithComparator:^NSComparisonResult(NSNumber *obj1, NSNumber *obj2) {
